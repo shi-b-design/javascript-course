@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+  <head></head>
+  <body>
+    <script type="module">
+      import dayjs from "https://unpkg.com/dayjs@1.11.10/esm/index.js";
+
+      const today = dayjs();
+      const dateIn5Days = today.add(5,'days');
+      const yearInFive = today.add(5, 'year');
+      const date1MonthAgo = today.subtract(1,'month');
+
+      console.log(dateIn5Days.format('MMMM dddd'));
+      console.log(yearInFive.format('MMMM D YYYY'));
+      console.log(date1MonthAgo.format('MMMM D'))
+
+    </script>
+  </body>
+</html>
